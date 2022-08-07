@@ -1,0 +1,29 @@
+Results for the extraLargeArray - .push is faster
+insert 1.0030833 s
+append 3.0299 ms
+
+Results for the LargeArray - .push is faster
+insert 8.2262 ms
+append 531.5 μs
+
+Results for the mediumArray - .push is faster
+insert 195.3 μs
+append 130.5 μs
+
+Results for the smallArray - .unshift is faster
+insert 49.7 μs
+append 99.5 μs
+
+Results for the tinyArray - .unshift is faster
+insert 33.8 μs
+append 87 μs
+
+
+
+conclusion: 
+
+.push is faster for the extraLargeArray, LargeArray, and mediumArray. 
+.unshift is faster for the smallArray, .unshift is faster for the tinyArray
+
+seems like if the array contains up to 100 elements, .unshift is faster. after 100 elements, .push is faster.
+
